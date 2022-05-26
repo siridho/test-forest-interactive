@@ -1,0 +1,41 @@
+{
+  "name": "test-forest-interactive",
+  "version": "1.0.0",
+  "description": "to test from forest interactive",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "mocha ./test --reporter spec --exit",
+    "sequelize:migration:generate": "sequelize-cli migration:generate --name",
+    "sequelize:migrate": "sequelize-cli db:migrate",
+    "sequelize:seed:create": "sequelize-cli seed:generate --name",
+    "sequelize:seed": "sequelize-cli db:seed:all"
+  },
+  "author": "sintya ridho pamungkas",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@hapi/joi": "^14.5.0",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.0",
+    "sequelize": "^6.20.0",
+    "yarn": "^1.22.18"
+  }
+}
